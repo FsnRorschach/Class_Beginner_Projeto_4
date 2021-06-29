@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/bootstrap_css/bootstrap.min.css">
+    
+    <title>Projeto Modulo 4</title>
+</head>
+<body id="tbody">
+    <div class="container">
+        <div class="box-header with-border">
+            <h3 class="box-title">Formulário de cadastro de usuários</h3>
+        </div>
+        <!-- /.box-header -->
+        <!-- form start -->
+        <form id="cadastroForm" role="form" method="GET" action="">
+            <div class="box-body">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <div id="nomeDiv">
+                        <input type="text" class="form-control" name="nome" id="nome" placeholder="Ex: Fabio Novais" alt="Insira seu nome completo." value="" required>                       
+                    </div> 
+                </div>
+                <div class="form-group">               
+                    <label for="email">E-mail:</label>
+                    <div id="emailDiv">
+                        <input type="email" class="form-control" name="email" id="email" placeholder="Ex: name@example.com" alt="Insira seu e-mail." value="" required>                       
+                    </div> 
+                </div>
+                <div class="form-group">                
+                    <label for="telefone">Telefone:</label>
+                    <div id="telefoneDiv">
+                        <input type="text" class="form-control" name="telefone" id="telefone" placeholder="Ex: (00) 00000-0000" alt="Insira seu telefone." value="" required>                       
+                    </div> 
+                </div>
+                <div class="form-group">                
+                    <label for="cep">CEP:</label>
+                    <div  id="cepDiv">
+                        <input type="text" class="form-control" name="cep"  id="cep" placeholder="Ex: 01310-100" alt="Insira um CEP válido." value="" onblur="pesquisacep(this.value);" size="10" maxlength="9" required>                       
+                    </div> 
+                </div>
+                <div class="form-group">                
+                    <label for="rua">Rua:</label>
+                    <div id="ruaDiv">
+                        <input type="text" class="form-control" name="rua" id="rua" alt="Insira o nome da rua." placeholder="EX: Av. Paulista"required>                       
+                    </div>
+                </div>
+                <div class="form-group"></div>                 
+                    <label for="numero">Numero:</label>
+                    <div id="numeroDiv">
+                        <input type="number" class="form-control" name="numero" id="numero" alt="Insira o numero da residência." required>                       
+                    </div>
+                </div> 
+                <div class="form-group" id="complementoDiv">
+                    <div id="btnComplemento">
+                        <button class="btn btn-primary btn-sm" id="btnComplemento" alt="Botão mostrar caixa de texto do complemento" hidden>Complemento</button>
+                    </div>
+                    <div id="complemento">
+                        <input type="text" class="form-control" name="complemento" id="complemento" alt="Insira um complemento do número." required disabled hidden>
+                    </div>                   
+                </div>
+                <div class="form-group">              
+                    <label for="bairro">Bairro:</label>
+                    <div id="bairroDiv">
+                        <input type="text" class="form-control" name="bairro" id="bairro" alt="Insira o Bairro." required>                       
+                    </div>  
+                </div>
+                <div class="form-group">      
+                    <label for="cidade">Cidade:</label>
+                    <div id="cidadeDiv">
+                        <input type="text" class="form-control" name="cidade" id="cidade" alt="Insira a Cidade" required>                       
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="uf">Estado:</label>
+                    <div id="ufDiv">
+                        <input type="text" class="form-control" name="uf" id="uf" alt="Insira o Estado." required>                       
+                    </div>
+                </div>
+                <!-- /.box-body -->          
+                <div class="box-footer">
+                    <button type="submit" class="btn btn-success btn-sm" id="btnEnviar" alt="Botão Enviar Formulário" hidden>Enviar</button>
+                    <button type="submit" class="btn btn-info btn-sm" id="btnLimpar" alt="Botão Limpar Formulário">Limpar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="./script/script.js"></script>
+    <script src="./script/bootstrap_js/bootstrap.min.js"></script>    
+</body>
+</html>
